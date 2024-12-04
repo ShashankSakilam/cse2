@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>User registration form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form name="f1" onsubmit="get_info(); return false;">
+    <h2>Registration Form</h2>
+    First name: <input type="text" id="firstname" required><br><br>
+    Last name: <input type="text" id="lastname" required><br><br>
+    Father's name: <input type="text" id="fathername"><br><br>
+    Mother's name: <input type="text" id="mothername"><br><br>
+    E-mail: <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"><br><br>
+    Phone number: <input type="number" id="pno" maxlength="10" required ><br><br>
+    Date of Birth: <input type="date" id="dob" required><br><br>
+    Address: <input type="text" id="address" required><br><br>
+    Gender:
+    <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select><br><br>
+    Department: <input type="text" id="dept" required><br><br>
+    Branch:
+    <select>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="IT">IT</option>
+        <option value="MEC">MEC</option>
+    </select><br><br>
+    Highest Education Qualification:
+    <select id="qualification">
+        <option value="Post Graduation">Post Graduation</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Under Graduation">Under Graduation</option>
+    </select><br><br>
+    Qualification type: <input type="text" id="qualitype" required><br><br>
+    Upload passport size photo: <input type="file" accept="image/*" id="passpic"><br><br>
+    Upload signature: <input type="file" accept="image/*" id="sign"><br><br>
+    <div class="button-container">
+      <input type="submit" value="submit" id="Submit"><br><br>
+      <input type="reset" value="Reset" id="Reset">
+    </div> 
+</form>
+<script src="script.js"></script>
+</body>
+</html>
